@@ -4,6 +4,7 @@
   <div>
     {% for block in section.blocks %}
       {% case block.type %}
+        {% when 'image_picker' %}
           <h2>{{ block.settings.custom_title_block }}</h2>
           {{ block.settings.image | image_url: width: 500 | image_tag }}
       {% endcase %}
