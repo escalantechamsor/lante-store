@@ -3,11 +3,7 @@
 
   <div>
     {% for block in section.blocks %}
-      {% case block.type %}
-        {% when 'image_picker' %}
-          <h2>{{ block.settings.custom_title_block }}</h2>
-          {{ block.settings.image | image_url: width: 500 | image_tag }}
-      {% endcase %}
+      {{ block.settings.image | image_url: width: 500 | image_tag }}
     {% endfor %}
   </div>
 </section>
@@ -40,11 +36,7 @@
            "id": "image",
            "label": "Image"
          },
-        {
-      "type": "text",
-      "id": "custom_title_block",
-      "label": "Título del bloque"
-    },
+
 
      ]
    }
