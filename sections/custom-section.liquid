@@ -1,4 +1,6 @@
-<p>{{ section.settings.custom_text }}</p>
+<section>
+  <p>{{ section.settings.custom_text }}</p>
+</section>
 
 {% schema %}
 {
@@ -12,5 +14,14 @@
       "label": "Título de la sección"
     }
   ],
+  "blocks": [
+   {
+     "name": "Custom Section Blocks",
+     "type": "customizable_type",
+     "settings": [
+
+     ]
+   }
+  ]
 }
 {% endschema %}
