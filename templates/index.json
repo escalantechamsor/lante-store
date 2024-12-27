@@ -22,8 +22,8 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "text": "Conoce los exquisitos que garantizan que tu belleza y salud sean cada día más radiante",
+            "text_style": "subtitle"
           }
         },
         "button": {
