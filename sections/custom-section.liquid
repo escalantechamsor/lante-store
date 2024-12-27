@@ -1,8 +1,10 @@
+{{ custom-section.css | asset_url | stylesheet_tag }}
 <section>
   <p>{{ section.settings.custom_text }}</p>
   {{ section.settings.image | image_url: width: 500 | image_tag }}
   <div>
     {% for block in section.blocks %}
+      <div class="image_container_block"></div>
       {{ block.settings.image | image_url: width: 500 | image_tag }}
     {% endfor %}
   </div>
