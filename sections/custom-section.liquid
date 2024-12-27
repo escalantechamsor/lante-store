@@ -1,6 +1,6 @@
 <section>
   <p>{{ section.settings.custom_text }}</p>
-
+  {{ section.settings.image | image_url: width: 500 | image_tag }}
   <div>
     {% for block in section.blocks %}
       {{ block.settings.image | image_url: width: 500 | image_tag }}
