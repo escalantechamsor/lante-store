@@ -1,7 +1,7 @@
 <section>
   <p>{{ section.settings.custom_text }}</p>
 
-  {{ section.settings.image | image_url: width: 500, height: 500 | image_tag }}
+  {{ section.settings.image | image_url: 'master' | image_tag }}
 
   <div>
     {% for block in section.blocks %}
