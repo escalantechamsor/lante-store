@@ -51,7 +51,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-3",
-        "image_behavior": "ambient",
+        "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
@@ -63,14 +63,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Pensamos en tu bienestar",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "text": "<p>The best choice when we think about foods. Cero kalories  Considered the top choice for natural food enthusiasts, this product boasts zero calories.</p>"
           }
         }
       },
