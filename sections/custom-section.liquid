@@ -2,11 +2,11 @@
   <p>{{ section.settings.custom_text }}</p>
   {{ section.settings.image | image_url: width: 500 | image_tag }}
   <div>
-    {% for block in section.blocks %}
-      <div class="image_container_block">
+    <div class="image_container_block">
+      {% for block in section.blocks %}
         {{ block.settings.image | image_url: width: 500 | image_tag }}
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 </section>
 
