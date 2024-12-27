@@ -1,4 +1,8 @@
 .image_container_block{
   display: grid,
-    grid-template-columns: repeat(1fr,3)
+  grid-template-columns: repeat(1fr,3)
+  gap:10px
+}
+.image_container_block img{
+  height: 50vh;
 }
