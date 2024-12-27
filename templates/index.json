@@ -44,9 +44,9 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/green-apples.jpg",
+        "image": "shopify://shop_images/fresh-oranges-pile.jpg",
         "image_overlay_opacity": 30,
-        "image_height": "small",
+        "image_height": "medium",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
