@@ -1,8 +1,10 @@
 <section>
   <p>{{ section.settings.custom_text }}</p>
+  <h2>Imagen fuera del blocks</h2>
   <div>
     {% for block in section.blocks %}
       {% case block.type %}
+          <h2>{{ block.settings.custom_title_block }}</h2>
           {{ block.settings.image | image_url: width: 500 | image_tag }}
       {% endcase %}
     {% endfor %}
@@ -36,7 +38,13 @@
            "type": "image_picker",
            "id": "image",
            "label": "Image"
-         }
+         },
+        {
+      "type": "text",
+      "id": "custom_title_block",
+      "label": "Título del bloque"
+    },
+
      ]
    }
   ],
