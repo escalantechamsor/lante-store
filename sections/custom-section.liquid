@@ -1,5 +1,14 @@
 <section>
   <p>{{ section.settings.custom_text }}</p>
+
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'customizable_type' %}
+        <div class="custom" {{ block.shopify_attributes }}>
+          {{ block.settings.image | image_url: width: 500 | image_tag }}
+        </div>
+    {% endcase %}
+  {% endfor %}
 </section>
 
 {% schema %}
