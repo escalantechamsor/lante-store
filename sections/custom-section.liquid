@@ -1,7 +1,7 @@
 <section>
   <p>{{ section.settings.custom_text }}</p>
   <h2>Imagen fuera del blocks</h2>
-  {{ section.settings.image | image_url: width: 500 | image_tag }}
+  {{ section.settings.image }}
 
   <div>
     {% for block in section.blocks %}
