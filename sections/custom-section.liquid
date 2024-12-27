@@ -1,4 +1,3 @@
-{{ custom-section.css | asset_url | stylesheet_tag }}
 <section>
   <p>{{ section.settings.custom_text }}</p>
   {{ section.settings.image | image_url: width: 500 | image_tag }}
@@ -9,6 +8,17 @@
     {% endfor %}
   </div>
 </section>
+
+{% stylesheet %}
+   .image_container_block{
+    display: grid,
+    grid-template-columns: repeat(1fr,3)
+    gap:10px
+  }
+  .image_container_block img{
+    height: 50vh;
+  }
+{% endstylesheet %}
 
 {% schema %}
 {
